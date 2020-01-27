@@ -4,6 +4,7 @@ class Node(object):
         self.left = None
         self.right = None
 
+
 class BinaryTree(object):
     def __init__(self, root):
         self.root = Node(root)
@@ -12,6 +13,7 @@ class BinaryTree(object):
         """Return True if the value
         is in the tree, return
         False otherwise."""
+
         return self.preorder_search(self.root, find_val)
 
     def print_tree(self):
@@ -56,7 +58,7 @@ tree.root.left.right = Node(5)
 
 # Test search
 # Should be True
-print(tree.search(5))
+print(tree.search(4))
 # Should be False
 print(tree.search(6))
 
